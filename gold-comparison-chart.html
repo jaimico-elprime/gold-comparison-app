@@ -73,6 +73,13 @@
             border-radius: 16px;
             padding: 25px;
             margin-bottom: 25px;
+            height: 450px !important;
+            max-height: 450px;
+            overflow: hidden;
+        }
+        #chart {
+            height: 400px !important;
+            max-height: 400px;
         }
         #chart {
             height: 500px;
@@ -129,6 +136,12 @@
             color: white;
             margin-bottom: 15px;
             font-size: 1rem;
+        }
+        .data-sources p {
+            color: #9ca3af;
+            font-size: 0.85rem;
+            line-height: 1.8;
+            margin-bottom: 8px;
         }
         .sources-list {
             display: flex;
@@ -236,13 +249,20 @@
         </div>
         
         <div class="data-sources">
-            <h3>📊 Hardcoded Historical Data (Last 30 Days)</h3>
+            <h3>📊 Data Sources & Ticker Descriptions</h3>
             <div class="sources-list">
                 <span class="source-tag gold">Bloomberg Spot</span>
                 <span class="source-tag gold">CME Futures</span>
                 <span class="source-tag gold">LBMA Afternoon</span>
                 <span class="source-tag gold">Investing.com</span>
-                <span class="source-tag crypto">CoinGecko API</span>
+                <span class="source-tag crypto">CoinGecko</span>
+            </div>
+            <div class="ticker-descriptions" style="margin-top: 20px; text-align: left; font-size: 0.85rem; color: #9ca3af; line-height: 1.8;">
+                <p><span style="color: #fbbf24;">●</span> <strong style="color: white;">Bloomberg Spot (XAU/USD):</strong> Official spot gold price from Bloomberg terminal. The benchmark price for physical gold in USD per troy ounce.</p>
+                <p><span style="color: #3b82f6;">●</span> <strong style="color: white;">CME Futures:</strong> Gold futures settlement prices from Chicago Mercantile Exchange. Represents front-month futures contracts.</p>
+                <p><span style="color: #8b5cf6;">●</span> <strong style="color: white;">LBMA Afternoon:</strong> London Bullion Market Association afternoon gold fix. The traditional benchmark for gold pricing in London.</p>
+                <p><span style="color: #3b82f6;">●</span> <strong style="color: white;">Investing.com:</strong> Daily closing prices from Investing.com. Aggregated data from major forex and commodity exchanges.</p>
+                <p><span style="color: #10b981;">●</span> <strong style="color: white;">XAUT (Tether Gold):</strong> Tokenized gold by Tether, backed by physical gold stored in Swiss vaults. 1 XAUT = 1 troy oz of gold.</p>
             </div>
         </div>
         
