@@ -4,7 +4,7 @@ Interactive chart comparing gold spot prices (XAU/USD) from multiple sources wit
 
 ## 🌟 Features
 
-- **30-day historical price comparison** (Dec 31, 2025 - Jan 29, 2026)
+- **30-day historical price comparison** (Dec 31, 2025 - Jan 30, 2026)
 - **Multiple gold price sources:**
   - Bloomberg Spot Price
   - CME Futures
